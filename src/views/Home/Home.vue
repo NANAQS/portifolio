@@ -10,7 +10,7 @@
             <p class="title">Otávio</p>
               <v-img
                 v-if="mobile" 
-                src="https://i.pinimg.com/originals/f5/d9/8b/f5d98b3e305d45533bd32d558c70c5d9.jpg"
+                src="../../assets/face.png"
                 alt="John"
                 width="350"
                 style="border-radius: 10px;"
@@ -21,7 +21,7 @@
           </v-col>
         <v-avatar class="ml-16" v-show="!mobile" size="280">
           <v-img
-            src="https://i.pinimg.com/originals/f5/d9/8b/f5d98b3e305d45533bd32d558c70c5d9.jpg"
+            src="../../assets/face.png"
             alt="John"
           ></v-img>
         </v-avatar>
