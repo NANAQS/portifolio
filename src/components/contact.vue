@@ -13,8 +13,8 @@
         ></v-btn>
       </div>
   
-      <div class="pt-0">
-        Agradeço por ver meu portifolio e espero sua mensagem :)
+      <div>
+        Agradeço por ver meu portifolio :)
       </div>
   
       <v-divider></v-divider>

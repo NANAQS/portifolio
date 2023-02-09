@@ -1,117 +1,33 @@
 <template>
-    <h1 class="mt-16 title" style="text-align: center;">Time Line</h1>
-    <v-timeline class="mt-16">
-      <v-timeline-item
-        dot-color="purple-lighten-2"
-        fill-dot
-      >
-        <v-card>
-          <v-card-title class="bg-purple-lighten-2">
-            <v-icon
-              size="large"
-              class="me-4"
-              icon="mdi-magnify"
-            ></v-icon>
-            <h2 class="font-weight-light">
-              Title 1
-            </h2>
-          </v-card-title>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-  
-      <v-timeline-item
-        dot-color="amber-lighten-1"
-        fill-dot
-        size="x-small"
-      >
-        <v-card>
-          <v-card-title class="bg-amber-lighten-1 justify-end">
-            <h2 class="me-4 font-weight-light">
-              Title 2
-            </h2>
-            <v-icon
-              size="large"
-              icon="mdi-home-outline"
-            ></v-icon>
-          </v-card-title>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-  
-      <v-timeline-item
-        dot-color="cyan-lighten-1"
-        fill-dot
-      >
-        <v-card>
-          <v-card-title class="bg-cyan-lighten-1">
-            <v-icon
-              class="me-4"
-              size="large"
-              icon="mdi-email-outline"
-            ></v-icon>
-            <h2 class="font-weight-light">
-              Title 3
-            </h2>
-          </v-card-title>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-  
-      <v-timeline-item
-        dot-color="red-lighten-1"
-        fill-dot
-        size="x-small"
-      >
-        <v-card>
-          <v-card-title class="bg-red-lighten-1 justify-end">
-            <h2 class="me-4 font-weight-light">
-              Title 4
-            </h2>
-            <v-icon
-              size="large"
-              icon="mdi-account-multiple-outline"
-            ></v-icon>
-          </v-card-title>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-  
-      <v-timeline-item
-        dot-color="green-lighten-1"
-        fill-dot
-      >
-        <v-card>
-          <v-card-title class="bg-green-lighten-1">
-            <v-icon
-              class="me-4"
-              size="large"
-              icon="mdi-phone-in-talk"
-            ></v-icon>
-            <h2 class="font-weight-light">
-              Title 5
-            </h2>
-          </v-card-title>
-          <v-card-text>
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit.
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
+  <v-timeline class="ma-16" align="start">
+    <v-timeline-item
+      v-for="(year, i) in years"
+      :key="i"
+      :dot-color="year.color"
+      size="small"
+    >
+      <template v-slot:opposite>
+        <div
+          :class="`pt-1 headline font-weight-bold text-${year.color}`"
+          v-text="year.year"
+        ></div>
+      </template>
+      <div>
+        <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
+          {{ year.history[0] }}
+        </h2>
+        <div>
+          {{ year.history[1] }}
+        </div>
+      </div>
+    </v-timeline-item>
+  </v-timeline>
 </template>
 <script>
-export default {
-    
-}
+  import feed from '../data/lineHistory.json'
+  export default {
+    data: () => ({
+      years: feed
+    }),
+  }
 </script>
-
-<style>
-</style>

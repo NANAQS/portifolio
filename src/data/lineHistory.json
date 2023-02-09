@@ -1,0 +1,32 @@
+[
+    {
+       "color":"red",
+       "year":"2017",
+       "history": ["Inicio","com 12 anos de idade quando comecei a me interessar por tecnologia e consecutivamente aprendi a programar minha primeira linguagem foi C a qual estudei até por bastante tempo pois usava Linux e nesse ambiente o C e bem mais vivo, logo após me interessei por assemply e entender como funcionava em si toda a lógica por trás dos panos."]
+    },
+    {
+       "color":"red-accent-1",
+       "year":"2017",
+       "history": ["Começo web","Logo após tudo isso fui para C++ o qual conheci Html/css/js e em alguns anos depois JS seria uma das linguagens que mais tenho domínio. Eu gostava de programar sem utilizar nenhum framework ou biblioteca porque achava que estava aprendendo mais...até conhecer o devtool e saber que a segurança do JS e uma porcaria :'("]
+    },
+    {
+       "color":"orange-darken-4",
+       "year":"2018",
+       "history": ["NodeJs","Logo após fui pra nodeJs por conta do problema anterior, e com os conhecimentos que tinha em JS não foi dificil e logo após isso descobri o hippie do typescript e porque e mais eficiente do que JS"]
+    },
+    {
+       "color":"lime-lighten-3",
+       "year":"2021",
+       "history": ["Pandemia","Quando começou a pandemia decidi trabalhar como jovem aprendiz num mercado local e fiz um sistema lá por conta da dificuldade das pessoas em emitir codigo de barras no word ate hoje e usado e continua eficiente"]
+    },
+    {
+       "color":"light-green-lighten-2",
+       "year":"2022",
+       "history": ["Mobile","e por fim queria conhecer um pouco do mundo mobile assim iniciando com flutter ( porque Android Studio e pesado demais ) mesmo assim conheci um pouco do java android"]
+    },
+    {
+       "color":"green-accent-4",
+       "year":"2022",
+       "history": ["Agora","atualmente estou estudando padrões de código mais a fundo e melhorando meu portifólio com projetos o quais eu realmente relaxei e nao fiz muitos...mas prometo que logo irá ter mais. Obrigado por ler sobre minha história, abraços."]
+    }
+] 

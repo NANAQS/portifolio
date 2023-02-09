@@ -1,4 +1,5 @@
 <template>
+<div :id="title"></div>
 <v-container fill-height class="pt-16 case-studies">
   <p class="title" style="text-align: center;">{{ title }}</p>
   <v-slide-group
@@ -56,19 +57,14 @@
               <div>
                 <v-card-title class="text-h6">{{ caseStudies[model].itens[page].name }}</v-card-title>
 
-                <v-card-subtitle>Foster the People</v-card-subtitle>
+                <v-card-subtitle>{{ caseStudies[model].itens[page].disMin }}</v-card-subtitle>
 
                 <v-card-actions>
                   <v-btn
+                    v-if="caseStudies[model].itens[page].demo != '/'"
                     class="ms-2"
                     variant="outlined"
-                    size="small"
-                  >
-                    abrir detalhes
-                  </v-btn>
-                  <v-btn
-                    class="ms-2"
-                    variant="outlined"
+                    :href="caseStudies[model].itens[page].demo"
                     size="small"
                   >
                     DEMO
@@ -81,9 +77,41 @@
                 size="125"
                 rounded="0"
               >
-                <v-img src="https://cdn.vuetifyjs.com/images/cards/foster.jpg"></v-img>
+                <v-img style="border-radius: 10px;" :src="caseStudies[model].itens[page].image"></v-img>
               </v-avatar>
             </div>
+    <v-col cols="auto">
+      <v-dialog
+        transition="dialog-bottom-transition"
+      >
+        <template v-slot:activator="{ props }">
+          <v-btn
+            variant="outlined"
+            size="small"
+            width="100%"
+            v-bind="props"
+          >abrir detalhes</v-btn>
+        </template>
+        <template v-slot:default="{ isActive }">
+          <v-card>
+            <v-toolbar
+              color="primary"
+              title="Detalhes"
+            ></v-toolbar>
+            <v-card-text>
+              <div>{{ caseStudies[model].itens[page].script }}</div>
+            </v-card-text>
+            <v-card-actions class="justify-end">
+              <v-btn
+                variant="outlined"
+                size="small"
+                @click="isActive.value = false"
+              >Close</v-btn>
+            </v-card-actions>
+          </v-card>
+        </template>
+      </v-dialog>
+    </v-col>
           </v-card>
           <div class="text-center">
             <v-pagination

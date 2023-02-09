@@ -7,16 +7,17 @@
         <v-col cols="12" sm="4" :class="mobile ? pa-10 : pa-16">
             <p class="text-h6">olá, meu nome é:</p>
             <hr v-show="!mobile" />
-            <p class="text-h2 font-weight-bold">Otávio</p>
+            <p class="title">Otávio</p>
               <v-img
                 v-if="mobile" 
                 src="https://i.pinimg.com/originals/f5/d9/8b/f5d98b3e305d45533bd32d558c70c5d9.jpg"
                 alt="John"
                 width="350"
+                style="border-radius: 10px;"
               ></v-img>
               <br />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia placeat debitis sit vero, laboriosam porro voluptatum id facilis quis? Eaque perferendis autem, consequatur iste quibusdam laudantium pariatur similique minima fuga quasi qui, nostrum a?</p>
-              <v-btn width="500" class="mt-10 shw" color="primary" size="x-large">About me</v-btn>
+              <p>Sou programador focado em Front-end mas também já mexi com Back-end<br/><br/>Tenho 19 anos(ja fora do alistamento) e sou apaixonado por tecnologia desde meus 12 anos</p>
+              <v-btn href="#about" width="500" class="mt-10 shw" color="primary" size="x-large">About me</v-btn>
           </v-col>
         <v-avatar class="ml-16" v-show="!mobile" size="280">
           <v-img

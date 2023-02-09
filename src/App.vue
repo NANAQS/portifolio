@@ -3,12 +3,12 @@
     <v-app-bar v-if="!ok">
       <v-spacer></v-spacer>
       <a href="#home"><p class='defaultFont'>Home</p></a>
-      <p class='defaultFont'>Case studies</p>
-      <p class='defaultFont'>Testimonials</p>
-      <p class='defaultFont'>Recent work</p>
-      <p class='defaultFont'>About me</p>
+      <a href="#about"><p class='defaultFont'>More About Me</p></a>
+      <a href="#Case Studies"><p class='defaultFont'>Case studies</p></a>
+      <a href="#Profisional Works"><p class='defaultFont'>Profisional Works</p></a>
       <v-spacer></v-spacer>
-      <v-btn @click="toggleTheme" :prepend-icon="theme === 'dark' ? 'mdi-weather-night' : 'mdi-weather-sunny'"></v-btn>
+      <v-btn @click="toggleTheme" :prepend-icon="themeDD === 'dark' ? 'mdi-weather-night' : 'mdi-weather-sunny'">
+      </v-btn>
       <Linkdin />
       <Github />
     </v-app-bar>
@@ -19,12 +19,9 @@
     <v-navigation-drawer
         v-model="drop"
         location="bottom"
-        temporary
       >
       <v-container>
-          <v-btn class="mb-4 bg-surface-variant">Testimonials</v-btn>
-          <v-spacer></v-spacer>
-          <v-btn class="mb-4 bg-surface-variant">Recent work</v-btn>
+          <v-btn href="#Profisional Works" class="mb-4 bg-surface-variant">Profisional Works</v-btn>
           <v-spacer></v-spacer>
           <v-btn class="mb-4 bg-surface-variant"  @click="toggleTheme" :prepend-icon="theme === 'dark' ? 'mdi-weather-night' : 'mdi-weather-sunny'">Theme</v-btn>
           <v-spacer></v-spacer>
@@ -37,16 +34,16 @@
         Home
       </v-btn>
 
-      <v-btn value="case_studies">
+      <v-btn href="#Case Studies" value="case_studies">
         <v-icon>mdi-microsoft-visual-studio-code</v-icon>
 
         Case studies
       </v-btn>
 
-      <v-btn value="about">
+      <v-btn href="#about" value="about">
         <v-icon>mdi-heart</v-icon>
 
-        About me
+        About Me
       </v-btn>
       
       <v-btn value="more" @click="drop = !drop">
@@ -69,8 +66,10 @@ export default {
     const theme = useTheme()
 
     return {
-      theme,
-      toggleTheme: () => theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+      toggleTheme: () => {
+         theme.global.name.value = theme.global.current.value.dark ? 'light' : 'dark'
+         this.themeee = theme.global.name.value
+      },
     }
   },
   components: {
@@ -82,19 +81,12 @@ export default {
       ok: true,
       drop: false,
       windowWidth: ref(window.innerWidth),
-      theme: ref('dark')
     }
   },
   mounted() {
     if (this.windowWidth > 1000) {
       this.ok = false
     }
-  },
-  methods: {
-    onClick() {
-      console.log("CLICK");
-      this.theme = this.theme === 'light' ? 'dark' : 'light'
-    },
   }
 }
 </script>
