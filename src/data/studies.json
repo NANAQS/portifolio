@@ -1,6 +1,6 @@
 [
     {
-       "icon":"devicon-flutter-plain",
+       "icon":["devicon-flutter-plain"],
        "id":0,
        "name":"flutter",
        "itens":[
@@ -12,19 +12,21 @@
              "disMin": "Evento dart week",
              "image": "https://i.ytimg.com/vi/1vGBhgjy4aI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAg5ZCnD2HcXdZ-tItr5A0e0cZSyw",
              "script": "Evento ministrado por Rodrigo Rahman com fins de criar um aplicativo flutter ",
-             "demo": "https://github.com/NANAQS/dart_week"
+             "demo": "/",
+             "github": "https://github.com/NANAQS/dart_week"
           },
           {
              "name":"TODO",
              "disMin": "criado por mim mesmo",
              "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwAVrIp2Koo_CUSGgTpL3DXrQ0-D7Z8AHcDKtcaqc&s",
              "script": "Criado com base em estudos da documentção do flutter e videos do youtube auxiliares",
-             "demo": "https://github.com/NANAQS/To-Do-Flutter"
+             "demo": "/",
+             "github": "https://github.com/NANAQS/To-Do-Flutter"
           }
        ]
     },
     {
-        "icon":"devicon-elixir-plain",
+        "icon":["devicon-elixir-plain"],
         "id":1,
         "name":"elixir",
         "itens":[
@@ -36,12 +38,31 @@
               "disMin": "Criado para estudos",
               "image": "data:image/jpeg;base64,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",
               "script": "Criado para fins de estudo a qual queria saber mais sobre a linguagem e talvez começar algo, o projeto e simples você tem q descobrir qual numero o robo esta sortendo e tentar no minimo de tentativas possiveis para meior pontuação",
-              "demo": "https://github.com/NANAQS/guess_game_elixir"
+              "demo": "/",
+              "github": "https://github.com/NANAQS/guess_game_elixir"
            }
         ]
      },
      {
-        "icon":"devicon-vuejs-plain",
+      "icon":["devicon-react-original", "devicon-typescript-plain"],
+      "id":1,
+      "name":"React",
+      "itens":[
+            {
+               "color":"#1ba198"
+            },
+            {
+               "name":"TODO React",
+               "disMin": "Criado usando typescript",
+               "image": "https://imgur.com/ximDAe7.png",
+               "script": "criado a base de typescript e react para entender os fundamentos do framework",
+               "demo": "https://fanciful-croissant-5af249.netlify.app/",
+               "github": "https://github.com/NANAQS/React-ToDo"
+            }
+         ]
+      },
+     {
+        "icon":["devicon-vuejs-plain"],
         "id":2,
         "name":"vueJS",
         "itens":[
@@ -53,14 +74,16 @@
               "disMin": "Criado para estudos",
               "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--L71__yWO--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/z74oqos1984w5g5ah0i9.jpeg",
               "script": "Criado com base em estudos da documentção do flutter e videos do youtube auxiliares",
-              "demo": "https://github.com/NANAQS/todoVuejs"
+              "demo": "https://fanciful-melba-e60b2a.netlify.app/",
+              "github": "https://github.com/NANAQS/todoVuejs"
            },
            {
             "name":"Este portifolio",
             "disMin": "Feito com Vuetify",
             "image": "https://www.dtidigital.com.br/wp-content/uploads/2021/07/Vue-js.png",
             "script": "Este portifolio o qual você esta vendo e feito em vueJS3 e Vuetify3",
-            "demo": "https://github.com/NANAQS/todoVuejs"
+            "demo": "/",
+            "github": "https://github.com/NANAQS/portifolio"
          }
         ]
      }

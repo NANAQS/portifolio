@@ -1,6 +1,6 @@
 [
     {
-       "icon":"devicon-html5-plain",
+       "icon":["devicon-html5-plain"],
        "id":0,
        "name":"html",
        "itens":[
@@ -12,12 +12,13 @@
              "disMin": "criador de codigo de barras",
              "image": "https://i.imgur.com/rLhOEOY.png",
              "script": "Criado quando era jovem aprendiz, site criado como dito no about me para facilitar a criação de codigos de barras EAN-13 e criação de mini cartazes foi um dos primeiros projetos com fins de trabalho.",
-             "demo": "https://mulf.nanaq.repl.co/"
+             "demo": "https://mulf.nanaq.repl.co/",
+             "github": "/"
           }
        ]
     },
     {
-        "icon":"devicon-nodejs-plain",
+        "icon":["devicon-nodejs-plain"],
         "id":1,
         "name":"nodeJS",
         "itens":[
@@ -29,7 +30,8 @@
               "disMin": "Site com intuito financeiro",
               "image": "https://i.imgur.com/RIuMrvH.png",
               "script": "Trabalho como Freelancer, site criado como auxilio para para EMISSSÃO, DELETAÇÃO, EDIÇÃO e ENVIO de notas para o setor financeiro o qual e o orquestrador e compartilhar as informações para os outros setores.",
-              "demo": "/"
+              "demo": "/",
+              "github": "/"
            }
         ]
      }

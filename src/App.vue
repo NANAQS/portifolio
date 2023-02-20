@@ -7,7 +7,7 @@
       <a href="#Case Studies"><p class='defaultFont'>Case studies</p></a>
       <a href="#Profisional Works"><p class='defaultFont'>Profisional Works</p></a>
       <v-spacer></v-spacer>
-      <v-btn @click="toggleTheme" :prepend-icon="themeDD === 'dark' ? 'mdi-weather-night' : 'mdi-weather-sunny'">
+      <v-btn @click="toggleTheme" prepend-icon="mdi-weather-sunny">
       </v-btn>
       <Linkdin />
       <Github />
@@ -21,9 +21,9 @@
         location="bottom"
       >
       <v-container>
-          <v-btn href="#Profisional Works" class="mb-4 bg-surface-variant">Profisional Works</v-btn>
+          <v-btn href="#Profisional Works" class="mb-4 bg-surface-variant w-100">Profisional Works</v-btn>
           <v-spacer></v-spacer>
-          <v-btn class="mb-4 bg-surface-variant"  @click="toggleTheme" :prepend-icon="theme === 'dark' ? 'mdi-weather-night' : 'mdi-weather-sunny'">Theme</v-btn>
+          <v-btn class="mb-4 bg-surface-variant w-100"  @click="toggleTheme" prepend-icon="mdi-weather-sunny">Theme</v-btn>
           <v-spacer></v-spacer>
     </v-container>
       </v-navigation-drawer>
@@ -36,19 +36,16 @@
 
       <v-btn href="#Case Studies" value="case_studies">
         <v-icon>mdi-microsoft-visual-studio-code</v-icon>
-
         Case studies
       </v-btn>
 
       <v-btn href="#about" value="about">
         <v-icon>mdi-heart</v-icon>
-
         About Me
       </v-btn>
       
       <v-btn value="more" @click="drop = !drop">
         <v-icon>mdi-more</v-icon>
-
         more options
       </v-btn>
     </v-bottom-navigation>

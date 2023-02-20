@@ -22,9 +22,7 @@
           @click="toggle"
         >
         <v-card-title class="text-h5">
-          <i 
-            :class="item.icon"
-            ></i>
+          <i v-for="icon in item.icon" style="margin-right: 5px;" :class="icon"></i>
         </v-card-title>
         <v-card-subtitle>{{ item.name }}</v-card-subtitle>
 
@@ -69,6 +67,14 @@
                   >
                     DEMO
                   </v-btn>
+                  <v-btn
+                    v-if="caseStudies[model].itens[page].github != '/'"
+                    class="ms-2"
+                    variant="outlined"
+                    :href="caseStudies[model].itens[page].github"
+                    size="small"
+                    icon="mdi-github"
+                  ></v-btn>
                 </v-card-actions>
               </div>
 
