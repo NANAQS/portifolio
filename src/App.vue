@@ -3,9 +3,10 @@
     <v-app-bar v-if="!ok">
       <v-spacer></v-spacer>
       <a href="#home"><p class='defaultFont'>Home</p></a>
-      <a href="#about"><p class='defaultFont'>More About Me</p></a>
+      <a href="#about"><p class='defaultFont'>About Me</p></a>
       <a href="#Case Studies"><p class='defaultFont'>Case studies</p></a>
-      <a href="#Profisional Works"><p class='defaultFont'>Profisional Works</p></a>
+      <a href="#servico"><p class='defaultFont'>Serviço</p></a>
+      <a href="#contato"><p class='defaultFont'>Contato</p></a>
       <v-spacer></v-spacer>
       <v-btn @click="toggleTheme" prepend-icon="mdi-weather-sunny">
       </v-btn>
@@ -21,7 +22,8 @@
         location="bottom"
       >
       <v-container>
-          <v-btn href="#Profisional Works" class="mb-4 bg-surface-variant w-100">Profisional Works</v-btn>
+          <v-btn href="#servico" class="mb-4 bg-surface-variant w-100">Serviço</v-btn>
+          <v-btn href="#contato" class="mb-4 bg-surface-variant w-100">Contato</v-btn>
           <v-spacer></v-spacer>
           <v-btn class="mb-4 bg-surface-variant w-100"  @click="toggleTheme" prepend-icon="mdi-weather-sunny">Theme</v-btn>
           <v-spacer></v-spacer>

@@ -5,7 +5,7 @@
   <v-slide-group
       v-model="model"
       class="pa-4"
-      selected-class="bg-primary"
+      selected-class="bg-secondary"
       show-arrows
     >
       <v-slide-group-item
@@ -119,7 +119,7 @@
       </v-dialog>
     </v-col>
           </v-card>
-          <div class="text-center">
+          <div v-if="caseStudies[model].itens.length-2 != 0" class="text-center">
             <v-pagination
               v-model="page"
               :length="caseStudies[model].itens.length-1"

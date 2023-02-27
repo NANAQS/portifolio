@@ -1,16 +1,17 @@
 <template>
+
   <v-main>
     <v-container fill-height class="pt-16">
-    <Linkdin v-show="mobile" class="mr-5"  />
-    <Github  v-show="mobile"/>
+    <Linkdin v-show="mobile" class="mr-5 mb-5"  />
+    <Github  v-show="mobile" class="mb-5"/>
     <v-row justify="center" >
         <v-col cols="12" sm="4" :class="mobile ? pa-10 : pa-16">
-            <p class="text-h6">olá, meu nome é:</p>
+            <p class="text-h6">Olá, meu nome é:</p>
             <hr v-show="!mobile" />
             <p class="title">Otávio</p>
               <v-img
                 v-if="mobile" 
-                src="../../assets/face.png"
+                src="../../assets/face.jpg"
                 alt="John"
                 width="350"
                 style="border-radius: 10px;"
@@ -21,7 +22,7 @@
           </v-col>
         <v-avatar class="ml-16" v-show="!mobile" size="280">
           <v-img
-            src="../../assets/face.png"
+            src="../../assets/face.jpg"
             alt="John"
           ></v-img>
         </v-avatar>
@@ -30,6 +31,7 @@
 
   <about :widthDevice="mobile" />
   <storyLine />
+  <services :widthDevice="mobile" />
   <studies />
   <studies wr="false" />
   
@@ -45,6 +47,7 @@ import studies from '../../components/studies.vue'
 import storyLine from '../../components/storyLine.vue'
 import about from '../../components/about.vue'
 import contact from '../../components/contact.vue'
+import services from '../../components/services.vue'
 import { useTheme } from 'vuetify'
 
 export default {
@@ -62,6 +65,7 @@ export default {
     about,
     Linkdin,
     Github,
+    services,
     contact
   }
 }

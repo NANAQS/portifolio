@@ -1,0 +1,22 @@
+[
+    [
+        {
+            "name": "Landing Page",
+            "description": "Pagina web basica feita normalmente para meios de contato"
+        },
+        {
+            "name": "Aplicacao Web Simple",
+            "description": "Usada para coisas simples como por exemplo um portifolio a qual usa varias paginas web"
+        },
+        {
+            "name": "Aplicacao medio porte",
+            "description": "Uma aplicacao a qual faz multiplas requicões em tempo real usando banco de dados etc, exemplo site de gestão de setores"
+        }
+    ],
+    [
+        {
+            "name": "app Simples",
+            "description": "App simples sem ultilização de banco de dados apenas para demonstracao de algo"
+        }
+    ]
+]

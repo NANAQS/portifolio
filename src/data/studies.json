@@ -10,7 +10,7 @@
           {
              "name":"vaquinha burguer",
              "disMin": "Evento dart week",
-             "image": "https://i.ytimg.com/vi/1vGBhgjy4aI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAg5ZCnD2HcXdZ-tItr5A0e0cZSyw",
+             "image": "https://media-private.canva.com/seY-0/MAFbTVseY-0/1/s.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20230222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230222T094006Z&X-Amz-Expires=30307&X-Amz-Signature=25afc7213e4fe3c32274f6d2a26da85b7d3a6d74c6e3da96aa321292fe9a557c&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2022%20Feb%202023%2018%3A05%3A13%20GMT",
              "script": "Evento ministrado por Rodrigo Rahman com fins de criar um aplicativo flutter ",
              "demo": "/",
              "github": "https://github.com/NANAQS/dart_week"
