@@ -11,7 +11,7 @@
       v-for="item, i in data"
     >
       <v-img
-        :src="'/src/assets/semente'+i+'.png'"
+        :src="'/public/semente'+i+'.png'"
         height="300px"
         cover
       ></v-img>

@@ -31,6 +31,7 @@
 
   <about :widthDevice="mobile" />
   <storyLine />
+  <skills :widthDevice="mobile" />
   <services :widthDevice="mobile" />
   <studies />
   <studies wr="false" />
@@ -48,6 +49,9 @@ import storyLine from '../../components/storyLine.vue'
 import about from '../../components/about.vue'
 import contact from '../../components/contact.vue'
 import services from '../../components/services.vue'
+import skills from '../../components/skills.vue'
+
+
 import { useTheme } from 'vuetify'
 
 export default {
@@ -66,7 +70,8 @@ export default {
     Linkdin,
     Github,
     services,
-    contact
+    contact,
+    skills
   }
 }
 </script>
